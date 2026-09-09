@@ -2,11 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, Brain, Cpu } from "lucide-react";
 
 const EXPERIENCES = [
     {
-        title: "Graduate Research: Autonomous Systems",
+        title: "Graduate Research & Teaching Assistant",
         company: "Texas State University",
         location: "San Marcos, TX",
         period: "Jan 2024 – Dec 2025",
@@ -14,20 +14,42 @@ const EXPERIENCES = [
         achievements: [
             "Architected a CUDA-accelerated simulation pipeline in Isaac Sim, implementing memory optimization and distributed batching across dual-GPU clusters.",
             "Accelerated training by 45% and increased hardware utilization from 68% to 94%, enabling 200-hour stress tests without memory degradation.",
-            "Developed custom C++ reward functions via pybind11 for ROS2-based navigation; improved navigation safety by 38% on edge cases (92% collision-free)."
+            "Delivered technical instruction for 70+ CS students in Data Structures & Algorithms, building automated Python grading rubrics that cut turnaround time by 40%."
         ]
     },
     {
-        title: "Software Engineer",
-        company: "Innova Solutions",
-        location: "Hyderabad, India",
+        title: "Senior Software Engineer (Platform AI & Microservices)",
+        company: "Innova Solutions (Client: Clinithink Ltd)",
+        location: "London, UK / Alpharetta, GA",
         period: "Jun 2021 – Dec 2023",
         icon: Briefcase,
         achievements: [
-            "Redesigned SQL Server indexing strategy and refactored .NET microservices on Kubernetes for better fault domain isolation.",
-            "Implemented distributed session persistence for 50K+ concurrent users, achieving 99.99% service availability.",
-            "Reduced median latency by 57% (1.8s) while maintaining <200ms response times under peak load across a platform serving 50+ enterprise clients.",
-            "Integrated PyTorch-based deep learning models into production infrastructure with ONNX Runtime optimization and INT8 quantization, achieving <100ms inference latency."
+            "Architected enterprise LLM serving, evaluation, and retrieval pipelines using AWS Bedrock and LLaMA with prompt-safety guards, driving $200K ARR.",
+            "Decomposed legacy monoliths into domain-driven REST/gRPC microservices in Go, Python, and C#/.NET, serving 50+ enterprise accounts with 99.2% SLA uptime and <200ms latency.",
+            "Engineered real-time streaming conversational interfaces using TypeScript, React, and Server-Sent Events (SSE) with token streaming.",
+            "Hardened enterprise security with certificate-based OAuth 2.0 (private_key_jwt) and mTLS authentication under strict compliance standards."
+        ]
+    },
+    {
+        title: "Deep Learning Research Engineer",
+        company: "Unisys / Vidya Jyothi Institute of Technology",
+        location: "Hyderabad, India",
+        period: "Jun 2019 – Mar 2021",
+        icon: Brain,
+        achievements: [
+            "Led a team of 4 engineers designing CNN image classification pipelines in Python and C++, elevating model accuracy from 72% to 85%.",
+            "Built GPU-accelerated image preprocessing and batch data transformation pipelines, reducing end-to-end preprocessing latency by 40%."
+        ]
+    },
+    {
+        title: "MLOps Intern",
+        company: "Verzeo",
+        location: "Hyderabad, India",
+        period: "Feb 2020 – Apr 2020",
+        icon: Cpu,
+        achievements: [
+            "Automated end-to-end Python model training pipelines with Bayesian hyperparameter optimization, lifting downstream accuracy by 16%.",
+            "Integrated vector database similarity retrieval using FAISS, profiling retrieval bottlenecks to reduce semantic search latency."
         ]
     }
 ];
