@@ -12,7 +12,7 @@ export const useImagePreloader = (getFrameUrl: (index: number) => string, totalF
         const handleImageLoad = () => {
             loadedCount++;
             setImagesLoaded(loadedCount);
-            if (loadedCount === totalFrames) {
+            if (loadedCount >= 1) {
                 setIsReady(true);
             }
         };
@@ -20,7 +20,7 @@ export const useImagePreloader = (getFrameUrl: (index: number) => string, totalF
         const handleImageError = () => {
             loadedCount++;
             setImagesLoaded(loadedCount);
-            if (loadedCount === totalFrames) {
+            if (loadedCount >= 1) {
                 setIsReady(true);
             }
         };
